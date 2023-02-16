@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /*  styling for form container */
+      .form-container {
+        background-color: lightblue;
+        background-size: cover;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 2px #333;
+        text-align: center;
+      }
+
+      /* styling for form input fields */
+      input[type="text"],
+      select {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 20px;
+        width: 70%;
+      }
+
+      /* styling for submit button */
+      input[type="submit"] {
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+
+      /*  styling for form headings */
+      h2 {
+        color: green;
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Universe Entity</h2>
+      <form>
+        <h3>Personal Information*</h3>
+        <input type="text" placeholder="Full Name" required />
+        <input type="text" placeholder="ID No " required />    
+        <input type="text" placeholder="Address" required />
+        <input type="text" placeholder="Contact Number" required />
+        <input type="text" placeholder="Email" required />
+
+       <div>
+       <label for="gender"></label>
+          <select id="gender" name="gender">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+<div>
+          <label for="Satus"></label>
+          <select id="status" name="status">
+            <option value="">Relationship Status</option>
+            <option value="married">Single</option>
+            <option value="single">Married</option>
+            <option value="divorced">Divorced</option>
+            <option value="widowed">Widowed</option>  
+          </select>
+        </div>
+
+        <h3>Next of Kin Information*</h3>
+        <input type="text" placeholder="Full Name" required />
+        <input type="text" placeholder="Relationship" required />
+        <input type="text" placeholder="Contact Number" required />
+
+        <h3>Matric/N4 Information*  </h3>
+        <input type="text" placeholder="School Name"  />
+        <input type="text" placeholder="Year Completed" />
+
+        <h3>Previous Studies Information(If Obtained)</h3>
+        <input type="text" placeholder="Institution Name" required />
+        <input type="text" placeholder="Qualification Obtained" required />
+
+        <h3>Faculty Information*</h3>
+        <select>
+          <option value="">Select Faculty</option>
+          <option value="Science">Science</option>
+          <option value="Arts">Arts</option>
+          <option value="Commerce">Commerce</option>
+          <option value="Humanities">Humanities</option>
+        </select>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
